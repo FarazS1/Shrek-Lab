@@ -9,9 +9,9 @@ public class Lab003IqqyandHammy extends Applet
     public void paint(Graphics g)
    {
     Background.drawSky(g);
-    Background.drawTreea(g);
-    Background.drawTreeb(g);
-    Background.drawLeavesa(g);
-    Background.drawLeavesb(g);
+    Background.drawTreeA(g);
+    Background.drawTreeB(g);
+    Background.drawLeavesA(g);
+    Background.drawLeavesB(g);
     }
 }
