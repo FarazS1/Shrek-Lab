@@ -9,7 +9,7 @@ public class Background extends Applet
      g.setColor(Color.blue);
     g.fillRect(0,0,1920,1080);
     }
- public static void drawTreea(Graphics g)
+ public static void drawTreeA(Graphics g)
  {
      int red = 139;
      int green = 69;
@@ -38,7 +38,7 @@ public class Background extends Applet
      
      g.fillPolygon(branch);
     }
-     public static void drawTreeb(Graphics g)
+     public static void drawTreeB(Graphics g)
  {
      int red = 139;
      int green = 69;
@@ -54,38 +54,44 @@ public class Background extends Applet
     
     }
     
-  public static void drawLeavesa(Graphics g)
+  public static void drawLeavesA(Graphics g)
   {
    g.setColor(Color.green);
    int leavesx = (int) (Math.random()*150+50);
    int leavesy = (int) (Math.random()*50+100);
    
    
-   for (int x=1; x<=1000; x++)
+   for (int x=1; x<=400; x++)
    {
        leavesx = (int) (Math.random()*350+10);
        leavesy = (int) (Math.random()*200+0);
        int x1 = (int) (Math.random()*10+20);
        int y1 =(int) (Math.random()*20+20);
+   g.setColor(Color.black);
    g.drawOval(leavesx,leavesy,x1,y1);
-   
+   g.setColor(Color.green);
+   g.fillOval(leavesx,leavesy,x1-1,y1-1);
    
 }
 }
-public static void drawLeavesb (Graphics g)
+public static void drawLeavesB(Graphics g)
   {
    g.setColor(Color.green);
    int leavesx = (int) (Math.random()*150+50);
    int leavesy = (int) (Math.random()*50+100);
    
    
-   for (int x=1; x<=1000; x++)
+   for (int x=1; x<=400; x++)
    {
        leavesx = (int) (Math.random()*300+450);
        leavesy = (int) (Math.random()*200+0);
        int x1 = (int) (Math.random()*10+20);
        int y1 =(int) (Math.random()*20+20);
+       
+   g.setColor(Color.black);
    g.drawOval(leavesx,leavesy,x1,y1);
+   g.setColor(Color.green);
+   g.fillOval(leavesx,leavesy,x1-1,y1-1);
    
    
 }
