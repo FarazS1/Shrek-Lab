@@ -1,0 +1,17 @@
+//Lab 007 dab dab 
+//Shrek's swamp
+import java.awt.*;
+import java.applet.*;
+import java.awt.Graphics;
+import java.util.*;
+public class Lab003IqqyandHammy extends Applet 
+{
+    public void paint(Graphics g)
+   {
+    Background.drawSky(g);
+    Background.drawTreea(g);
+    Background.drawTreeb(g);
+    Background.drawLeavesa(g);
+    Background.drawLeavesb(g);
+    }
+}
