@@ -1,0 +1,93 @@
+import java.awt.*;
+import java.applet.*;
+import java.util.*;
+
+public class Background extends Applet
+{
+ public static void drawSky(Graphics g)
+ {
+     g.setColor(Color.blue);
+    g.fillRect(0,0,1920,1080);
+    }
+ public static void drawTreea(Graphics g)
+ {
+     int red = 139;
+     int green = 69;
+     int blue = 19;
+     
+     Color brown = new Color(red,green,blue);
+     g.setColor(brown);
+     
+     g.fillRect(150,50,100,800);
+     
+     
+     
+     Polygon trap = new Polygon();
+     trap.addPoint(250,850);
+     trap.addPoint(300,900);
+     trap.addPoint(100,900);
+     trap.addPoint(150,850);
+     
+     g.fillPolygon(trap);
+     
+     Polygon branch = new Polygon();
+     branch.addPoint(250,350);
+     branch.addPoint(350,250);
+     branch.addPoint(350,275);
+     branch.addPoint(250,400);
+     
+     g.fillPolygon(branch);
+    }
+     public static void drawTreeb(Graphics g)
+ {
+     int red = 139;
+     int green = 69;
+     int blue = 19;
+     
+     Color brown = new Color(red,green,blue);
+     g.setColor(brown);
+     
+     g.fillRect(550,75,100,775);
+     
+     
+     
+    
+    }
+    
+  public static void drawLeavesa(Graphics g)
+  {
+   g.setColor(Color.green);
+   int leavesx = (int) (Math.random()*150+50);
+   int leavesy = (int) (Math.random()*50+100);
+   
+   
+   for (int x=1; x<=1000; x++)
+   {
+       leavesx = (int) (Math.random()*350+10);
+       leavesy = (int) (Math.random()*200+0);
+       int x1 = (int) (Math.random()*10+20);
+       int y1 =(int) (Math.random()*20+20);
+   g.drawOval(leavesx,leavesy,x1,y1);
+   
+   
+}
+}
+public static void drawLeavesb (Graphics g)
+  {
+   g.setColor(Color.green);
+   int leavesx = (int) (Math.random()*150+50);
+   int leavesy = (int) (Math.random()*50+100);
+   
+   
+   for (int x=1; x<=1000; x++)
+   {
+       leavesx = (int) (Math.random()*300+450);
+       leavesy = (int) (Math.random()*200+0);
+       int x1 = (int) (Math.random()*10+20);
+       int y1 =(int) (Math.random()*20+20);
+   g.drawOval(leavesx,leavesy,x1,y1);
+   
+   
+}
+    }
+}
