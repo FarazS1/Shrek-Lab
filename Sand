@@ -1,0 +1,19 @@
+import java.awt.*;
+import java.applet.*;
+import java.util.*;
+public class Sand extends Applet
+{
+  public static void ground(Graphics g)
+  {
+      g.setColor(new Color(255,222,173));
+      
+      Polygon sandParameter = new Polygon();
+      
+      sandParameter.addPoint(0,630);
+      sandParameter.addPoint(1920,850);
+      sandParameter.addPoint(1920,1080);
+      sandParameter.addPoint(0,1080);
+      
+      g.fillPolygon(sandParameter);
+  }
+}
