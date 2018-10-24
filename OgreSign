@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.applet.*;
+import java.util.*;
+public class OgreSign extends Applet
+{
+    public static void sign(Graphics g)
+    {
+      for(int k=1;k<=100;k++)
+      {  
+         int red = 222;
+         int green = 184;
+         int blue = 135;
+
+         g.setColor(new Color(red,green,blue));
+         
+         int x1 = (int)(Math.random()*200);
+         int y1 = (int)(Math.random()*240+500);
+         
+         g.fillRect(x1,y1,275,150);
+
+      }
+
+    }
+   
+    public static void stand(Graphics g)
+    {
+     g.setColor(new Color(160,82,45));
+     
+     g.fillRect(150,450,50,630);
+    }
+}
