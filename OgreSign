@@ -3,7 +3,7 @@ import java.applet.*;
 import java.util.*;
 public class OgreSign extends Applet
 {
-    public static void sign(Graphics g)
+    public static void drawSign(Graphics g)
     {
       for(int k=1;k<=100;k++)
       {  
@@ -22,7 +22,7 @@ public class OgreSign extends Applet
 
     }
    
-    public static void stand(Graphics g)
+    public static void drawStand(Graphics g)
     {
      g.setColor(new Color(160,82,45));
      
