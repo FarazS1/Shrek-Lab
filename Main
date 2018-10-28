@@ -4,7 +4,8 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.Graphics;
 import java.util.*;
-public class Lab003IqqyandHammy extends Applet 
+
+public class Main extends Applet 
 {
     public void paint(Graphics g)
    {
@@ -13,5 +14,11 @@ public class Lab003IqqyandHammy extends Applet
     Background.drawTreeB(g);
     Background.drawLeavesA(g);
     Background.drawLeavesB(g);
+    GrassHills.drawPathHill(g);
+    GrassHills.drawHouseHill(g);
+    Sand.setGround(g);
+    OgreSign.drawStand(g);
+    OgreSign.drawSign(g);
+    
     }
 }
