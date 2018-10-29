@@ -1,3 +1,4 @@
+
 import java.awt.*;
 import java.applet.*;
 import java.util.*;
@@ -7,9 +8,9 @@ public class OgreSign extends Applet
     {
       for(int k=1;k<=100;k++)
       {  
-         int red = 222;
-         int green = 184;
-         int blue = 135;
+         int red = 205;
+         int green = 133;
+         int blue = 63;
 
          g.setColor(new Color(red,green,blue));
          
@@ -28,4 +29,47 @@ public class OgreSign extends Applet
      
      g.fillRect(150,450,50,630);
     }
+    
+    public static void drawWordBeware(Graphics g)
+    {
+      g.setColor(new Color(255,0,0));
+       
+      //Letter "A"
+      g.fillRect(100,400,20,100);
+      g.fillRect(100,400,60,20);
+      g.fillRect(140,400,20,100);
+      g.fillRect(100,440,60,20);
+      
+      //Letter "P"
+      
+      g.fillRect(50,525,20,100); 
+      g.fillRect(50,525,60,20);
+      g.fillRect(50,565,60,20); 
+      g.fillRect(90,525,20,50); 
+      
+      Polygon bLetter = new Polygon();
+      
+      bLetter.addPoint(40,500);
+      bLetter.addPoint(50,70);
+      bLetter.addPoint(100,50);
+      bLetter.addPoint(110,60);
+      
+      g.fillPolygon(bLetter);
+      
+      // Letter C
+         
+      g.fillRect(260,400 , 20 , 100 );
+      g.fillRect(260, 400 , 60 , 20 );
+      g.fillRect( 260 , 480 , 60 , 20 );
+         
+         // Letter S
+      
+      g.fillRect( 340 , 400 , 60 , 20 );
+      g.fillRect( 340 , 400 , 20 , 60 );
+      g.fillRect( 340,440,60 ,20 );
+      g.fillRect( 380 , 440 , 20 , 60 );
+      g.fillRect( 340 , 480 , 60 , 20 );
+
+    }
 }
+
