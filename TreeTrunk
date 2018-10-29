@@ -1,0 +1,41 @@
+import java.awt.*;
+import java.applet.*;
+import java.util.*;
+
+public class TreeHouse
+{
+  public static void drawTreeTrunk (Graphics g)
+  {
+      Polygon trunk = new Polygon();
+      Color brown = new Color(98,57,16);
+      
+      g.setColor(brown);
+      
+      trunk.addPoint(1300,500);
+      trunk.addPoint(1350,450);
+      trunk.addPoint(1400,300);
+      trunk.addPoint(1410,10);
+      trunk.addPoint(1435,50);
+      trunk.addPoint(1440,80);
+      trunk.addPoint(1445,50);
+      trunk.addPoint(1465,50);
+      trunk.addPoint(1475,140);
+      trunk.addPoint(1490,120);
+      trunk.addPoint(1490,120);
+      trunk.addPoint(1485,100);
+      trunk.addPoint(1485,80);
+      trunk.addPoint(1485,70);
+      trunk.addPoint(1510,75);
+      trunk.addPoint(1510,50);
+      trunk.addPoint(1535,10);
+      trunk.addPoint(1555,330);
+      trunk.addPoint(1590,340);
+      trunk.addPoint(1555,350);
+      trunk.addPoint(1600,500);
+      
+      g.fillPolygon(trunk);
+      
+      Polygon trunkB
+     
+    }
+}
