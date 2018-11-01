@@ -40,36 +40,76 @@ public class OgreSign extends Applet
       g.fillRect(140,400,20,100);
       g.fillRect(100,440,60,20);
       
-      //Letter "P"
+      //Letter "B"
       
-      g.fillRect(50,525,20,100); 
-      g.fillRect(50,525,60,20);
-      g.fillRect(50,565,60,20); 
-      g.fillRect(90,525,20,50); 
+      g.fillRect(50,525,15,100); 
+      g.fillRect(50,525,45,15);
+      g.fillRect(50,565,45,15); 
+      g.fillRect(90,525,15,50); 
       
       Polygon bLetter = new Polygon();
       
-      bLetter.addPoint(40,500);
-      bLetter.addPoint(50,70);
-      bLetter.addPoint(100,50);
-      bLetter.addPoint(110,60);
+      
+      bLetter.addPoint(45,615);
+      bLetter.addPoint(50,630);
+      bLetter.addPoint(105,615);
+      bLetter.addPoint(100,600);
       
       g.fillPolygon(bLetter);
       
-      // Letter C
-         
-      g.fillRect(260,400 , 20 , 100 );
-      g.fillRect(260, 400 , 60 , 20 );
-      g.fillRect( 260 , 480 , 60 , 20 );
-         
-         // Letter S
+     
+      Polygon bLetter2 = new Polygon();
       
-      g.fillRect( 340 , 400 , 60 , 20 );
-      g.fillRect( 340 , 400 , 20 , 60 );
-      g.fillRect( 340,440,60 ,20 );
-      g.fillRect( 380 , 440 , 20 , 60 );
-      g.fillRect( 340 , 480 , 60 , 20 );
-
+      bLetter2.addPoint(45,565);
+      bLetter2.addPoint(50,580);
+      bLetter2.addPoint(95,605);
+      bLetter2.addPoint(100,600);
+      
+      g.fillPolygon(bLetter2);
+      
+     //Letter E
+     Polygon eLetter = new Polygon();
+      
+      
+      eLetter.addPoint(115,560);
+      eLetter.addPoint(140,560);
+      eLetter.addPoint(140,570);
+      eLetter.addPoint(128,570);
+      eLetter.addPoint(128,580);
+      eLetter.addPoint(140,580);
+      eLetter.addPoint(140,585);
+      eLetter.addPoint(128,588);
+      eLetter.addPoint(128,600);
+      eLetter.addPoint(145,595);
+      eLetter.addPoint(140,605);
+      eLetter.addPoint(115,610);
+      
+      g.fillPolygon(eLetter);
+      
+      /*
+      //Letter W
+      Polygon wLetter = new Polygon();
+      
+      wLetter.addPoint(155,530);
+      wLetter.addPoint(165,595);
+      wLetter.addPoint(185,590);
+      wLetter.addPoint(195,585);
+      wLetter.addPoint(205,590);
+      wLetter.addPoint(220,530);
+      wLetter.addPoint(213,530);
+      wLetter.addPoint(205,555);
+      wLetter.addPoint(200,550);
+    
+      g.fillPolygon(wLetter);
+      */
+      
+      //Ogre
+      g.setColor(new Color(76,153,0));
+      
+      g.fillArc(150,615,160,145,0,180);
+      g.fillOval(130,650,200,150);
+     
+     
     }
 }
 
