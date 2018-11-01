@@ -140,5 +140,24 @@ public class TreeHouse extends Applet
     building.addPoint(1920,850);
     
     g.fillPolygon(building);
+    
+  
+    
+    
+    }
+     public static void drawWindow(Graphics g)
+    {
+      Color ins = new Color(209,165,88);
+      
+      g.setColor(ins);
+    
+     g.fillRect(1675,550,150,150);
+     
+     g.setColor(Color.black);
+     
+     g.drawLine(1750,550,1750,700);
+     g.drawLine(1675,625,1825,625);
+     
+     g.drawRect(1675,550,150,150);
     }
 }
