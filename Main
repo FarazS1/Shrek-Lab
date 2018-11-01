@@ -19,6 +19,11 @@ public class Main extends Applet
     Sand.setGround(g);
     OgreSign.drawStand(g);
     OgreSign.drawSign(g);
+    TreeHouse.drawBuilding(g);
+    TreeHouse.drawTreeTrunk(g);
+    TreeHouse.drawDoor(g);
+    TreeHouse.drawInside(g);
+    TreeHouse.drawWindow(g);
     
     }
 }
