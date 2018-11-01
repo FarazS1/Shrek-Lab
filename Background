@@ -6,14 +6,18 @@ public class Background extends Applet
 {
  public static void drawSky(Graphics g)
  {
-     g.setColor(Color.blue);
+     int red = 132;
+     int green = 182;
+     int blue = 136;
+     
+     g.setColor(new Color(red,green,blue));
     g.fillRect(0,0,1920,1080);
     }
  public static void drawTreeA(Graphics g)
  {
-     int red = 139;
-     int green = 69;
-     int blue = 19;
+     int red = 88;
+     int green = 59;
+     int blue = 16;
      
      Color brown = new Color(red,green,blue);
      g.setColor(brown);
@@ -40,9 +44,9 @@ public class Background extends Applet
     }
      public static void drawTreeB(Graphics g)
  {
-     int red = 139;
-     int green = 69;
-     int blue = 19;
+       int red = 88;
+     int green = 59;
+     int blue = 16;
      
      Color brown = new Color(red,green,blue);
      g.setColor(brown);
@@ -56,7 +60,14 @@ public class Background extends Applet
     
   public static void drawLeavesA(Graphics g)
   {
-   g.setColor(Color.green);
+   int red = 45;
+   int green = 77;
+   int blue = 20;
+   
+   Color greena = new Color(red,green,blue);
+   
+   g.setColor(greena);
+   
    int leavesx = (int) (Math.random()*150+50);
    int leavesy = (int) (Math.random()*50+100);
    
@@ -67,16 +78,23 @@ public class Background extends Applet
        leavesy = (int) (Math.random()*200+0);
        int x1 = (int) (Math.random()*10+20);
        int y1 =(int) (Math.random()*20+20);
+   g.setColor(greena);
+   g.fillOval(leavesx,leavesy,x1,y1);
    g.setColor(Color.black);
    g.drawOval(leavesx,leavesy,x1,y1);
-   g.setColor(Color.green);
-   g.fillOval(leavesx,leavesy,x1-1,y1-1);
+  
    
 }
 }
 public static void drawLeavesB(Graphics g)
   {
-   g.setColor(Color.green);
+  int red = 45;
+   int green = 77;
+   int blue = 20;
+   
+   Color greena = new Color(red,green,blue);
+   
+   g.setColor(greena);
    int leavesx = (int) (Math.random()*150+50);
    int leavesy = (int) (Math.random()*50+100);
    
@@ -88,10 +106,10 @@ public static void drawLeavesB(Graphics g)
        int x1 = (int) (Math.random()*10+20);
        int y1 =(int) (Math.random()*20+20);
        
+  g.setColor(greena);
+   g.fillOval(leavesx,leavesy,x1,y1);
    g.setColor(Color.black);
    g.drawOval(leavesx,leavesy,x1,y1);
-   g.setColor(Color.green);
-   g.fillOval(leavesx,leavesy,x1-1,y1-1);
    
    
 }
