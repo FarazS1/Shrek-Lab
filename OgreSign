@@ -32,15 +32,17 @@ public class OgreSign extends Applet
     
     public static void drawWordBeware(Graphics g)
     {
-      g.setColor(new Color(255,0,0));
-       
-      //Letter "A"
-      g.fillRect(100,400,20,100);
-      g.fillRect(100,400,60,20);
-      g.fillRect(140,400,20,100);
-      g.fillRect(100,440,60,20);
+        drawLetterB(g, 45, 615);
+        drawLetterE(g, 115, 560);
+        drawLetterW(g, 155, 530);
+        drawLetterA(g, 210, 605);
+        drawLetterR(g, 290, 565);
+        drawLetterE2(g, 330, 560);
+    }
       
-      //Letter "B"
+    public static void drawLetterB(Graphics g, int startX, int startY)  //Letter "B"
+    { 
+      g.setColor(new Color(205,0,0));
       
       g.fillRect(50,525,15,100); 
       g.fillRect(50,525,45,15);
@@ -50,7 +52,7 @@ public class OgreSign extends Applet
       Polygon bLetter = new Polygon();
       
       
-      bLetter.addPoint(45,615);
+      bLetter.addPoint(startX,startY);
       bLetter.addPoint(50,630);
       bLetter.addPoint(105,615);
       bLetter.addPoint(100,600);
@@ -66,12 +68,16 @@ public class OgreSign extends Applet
       bLetter2.addPoint(100,600);
       
       g.fillPolygon(bLetter2);
+    } 
       
-     //Letter E
-     Polygon eLetter = new Polygon();
+    public static void drawLetterE(Graphics g, int startX, int startY) //Letter E
+    {
+      g.setColor(new Color(205,0,0));
+      
+      Polygon eLetter = new Polygon();
       
       
-      eLetter.addPoint(115,560);
+      eLetter.addPoint(startX,startY);
       eLetter.addPoint(140,560);
       eLetter.addPoint(140,570);
       eLetter.addPoint(128,570);
@@ -85,31 +91,224 @@ public class OgreSign extends Applet
       eLetter.addPoint(115,610);
       
       g.fillPolygon(eLetter);
+    }
       
-      /*
-      //Letter W
+    public static void drawLetterW(Graphics g, int startX, int startY) //Letter W
+    { 
+      g.setColor(new Color(205,0,0));
+      
       Polygon wLetter = new Polygon();
       
-      wLetter.addPoint(155,530);
+      wLetter.addPoint(startX,startY);
       wLetter.addPoint(165,595);
-      wLetter.addPoint(185,590);
-      wLetter.addPoint(195,585);
+      wLetter.addPoint(175,590);
+      wLetter.addPoint(185,580);
+      wLetter.addPoint(195,587);
       wLetter.addPoint(205,590);
       wLetter.addPoint(220,530);
-      wLetter.addPoint(213,530);
-      wLetter.addPoint(205,555);
-      wLetter.addPoint(200,550);
-    
+      wLetter.addPoint(210,530);
+      wLetter.addPoint(200,560);
+      wLetter.addPoint(190,550);
+      wLetter.addPoint(180,565);
+      wLetter.addPoint(165,530);
+      
       g.fillPolygon(wLetter);
-      */
-      
-      //Ogre
-      g.setColor(new Color(76,153,0));
-      
-      g.fillArc(150,615,160,145,0,180);
-      g.fillOval(130,650,200,150);
-     
-     
     }
+      
+    public static void drawLetterA(Graphics g, int startX, int startY) //Letter A
+    {
+      g.setColor(new Color(205,0,0));
+      
+      Polygon aLetter1 = new Polygon();
+      
+      aLetter1.addPoint(startX,startY);
+      aLetter1.addPoint(230,540);
+      aLetter1.addPoint(255,600);
+      aLetter1.addPoint(245,600);
+      aLetter1.addPoint(230,560);
+      aLetter1.addPoint(220,605);
+      
+      g.fillPolygon(aLetter1);
+      
+      Polygon aLetter2 = new Polygon();
+      
+      aLetter2.addPoint(220,580);
+      aLetter2.addPoint(225,590);
+      aLetter2.addPoint(255,585);
+      aLetter2.addPoint(250,575);
+      
+      g.fillPolygon(aLetter2);
+    }
+    
+    public static void drawLetterR(Graphics g, int startX, int startY)  //Letter "R"
+    {
+      g.setColor(new Color(205,0,0));
+      
+      g.fillRect(275,525,15,85); 
+      g.fillRect(275,525,40,15);
+      g.fillRect(275,565,40,15); 
+      g.fillRect(310,525,15,50); 
+      
+      
+      Polygon pLetter = new Polygon();
+      
+      
+      pLetter.addPoint(startX,startY);
+      pLetter.addPoint(300,565);
+      pLetter.addPoint(325,590);
+      pLetter.addPoint(310,605);
+      
+      g.fillPolygon(pLetter);
+    }
+    
+    public static void drawLetterE2(Graphics g, int startX, int startY)  //Letter E2
+    {
+      g.setColor(new Color(205,0,0));
+      
+      Polygon e2Letter = new Polygon();
+      
+      e2Letter.addPoint(startX,startY);
+      e2Letter.addPoint(355,560);
+      e2Letter.addPoint(355,570);
+      e2Letter.addPoint(343,570);
+      e2Letter.addPoint(343,580);
+      e2Letter.addPoint(355,580);
+      e2Letter.addPoint(355,585);
+      e2Letter.addPoint(343,588);
+      e2Letter.addPoint(343,600);
+      e2Letter.addPoint(375,595);
+      e2Letter.addPoint(355,605);
+      e2Letter.addPoint(330,610);
+      
+      g.fillPolygon(e2Letter);
+      
+    }
+     
+    public static void drawOgre(Graphics g)
+    {  
+        drawOgreFace(g);
+        drawOgreLeftEar(g);
+        drawOgreRightEar(g);
+        drawOgreLeftEye(g);
+        drawOgreRightEye(g);
+        drawOgreNose(g);
+        drawOgreMouth(g);
+        drawOgreUpperTeeth(g);
+        drawOgreLowerTeeth(g);
+    }
+      
+      public static void drawOgreFace(Graphics g)//Face
+      {
+       g.setColor(new Color(76,153,0));
+      
+       g.fillArc(150,615,160,145,0,180); //Top Half
+      
+       g.fillOval(130,650,200,150); //Bottom Half
+      }
+      
+      public static void drawOgreLeftEar(Graphics g)//Left-Ear
+      { 
+       g.setColor(new Color(76,153,0));
+      
+       g.fillRect(120,645,50,12);
+       g.fillOval(100,630,35,35);
+      
+       g.setColor(new Color(25,51,0));
+       g.fillOval(105,635,25,25);
+      }
+      
+      public static void drawOgreRightEar(Graphics g)//Right-Ear
+      {
+       g.setColor(new Color(76,153,0));
+      
+       g.fillRect(285,645,45,8);
+       g.fillOval(310,628,30,35);
+      
+       g.setColor(new Color(25,51,0));
+       g.fillOval(315,633,20,25);
+      }
+      
+      public static void drawOgreLeftEye(Graphics g)//Left-Eye
+      {
+       g.setColor(new Color(64,64,64)); //Outer gray
+       g.fillOval(162,632,62,43);
+      
+       g.setColor(new Color(245,245,245)); //White eye
+       g.fillOval(170,640,50,28);
+      
+       g.setColor(new Color(205,0,0)); //Inner Red Pupil
+       g.fillOval(185,645,20,20);
+      }
+      
+      public static void drawOgreRightEye(Graphics g)//Right-Eye
+      {
+       g.setColor(new Color(64,64,64)); //Outer Gray
+       g.fillOval(235,635,50,28);
+      
+       g.setColor(new Color(245,245,245)); //White eye
+       g.fillOval(240,640,50,28);      
+      
+       g.setColor(new Color(205,0,0)); //Inner Red Pupil
+       g.fillOval(255,645,20,20);
+      }
+      
+      public static void drawOgreNose(Graphics g)//Nose
+      {
+       g.setColor(new Color(25,51,0));
+       g.fillArc(210,655,50,50,135,135);
+      
+       g.setColor(new Color(76,153,0));
+       g.fillArc(215,655,50,50,135,135);
+      }
+      
+      public static void drawOgreMouth(Graphics g)//Mouth
+      {
+       g.setColor(new Color(175,0,0));
+       g.fillOval(135,700,100,50);
+       g.fillOval(215,700,100,50);
+      }
+      
+      public static void drawOgreUpperTeeth(Graphics g)//Upper Teeth
+      {
+       g.setColor(new Color(245,245,245));
+      
+       int x1 = 160;
+       int x2 = 170;
+       int x3 = 180;
+       Polygon triUpTooth = new Polygon();
+      
+       for(int k=1;k<=6;k++)
+       {
+        triUpTooth.addPoint(x1,705);
+        triUpTooth.addPoint(x2,723);
+        triUpTooth.addPoint(x3,705);
+       
+        g.fillPolygon(triUpTooth);
+        x1+=22;
+        x2+=22;
+        x3+=22;
+       }
+      }
+      
+      public static void drawOgreLowerTeeth(Graphics g)//Upper Teeth
+      {
+       g.setColor(new Color(245,245,245));
+      
+       int x1 = 160;
+       int x2 = 170;
+       int x3 = 180;
+       Polygon triUpTooth = new Polygon();
+      
+       for(int k=1;k<=6;k++)
+       {
+        triUpTooth.addPoint(x1,745);
+        triUpTooth.addPoint(x2,727);
+        triUpTooth.addPoint(x3,745);
+       
+        g.fillPolygon(triUpTooth);
+        x1+=22;
+        x2+=22;
+        x3+=22;
+       }
+      }
 }
-
