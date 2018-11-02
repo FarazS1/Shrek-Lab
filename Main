@@ -14,11 +14,13 @@ public class Main extends Applet
     Background.drawTreeB(g);
     Background.drawLeavesA(g);
     Background.drawLeavesB(g);
-    GrassHills.drawPathHill(g);
-    GrassHills.drawHouseHill(g);
+    GrassHills.drawPathHill(g, 370, 550, 90, 90);
+    GrassHills.drawHouseHill(g, 745, 440, 0, 180);
     Sand.setGround(g);
     OgreSign.drawStand(g);
     OgreSign.drawSign(g);
+    OgreSign.drawWordBeware(g);
+    OgreSign.drawOgre(g);
     TreeHouse.drawBuilding(g);
     TreeHouse.drawTreeTrunk(g);
     TreeHouse.drawDoor(g);
