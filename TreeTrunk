@@ -63,9 +63,11 @@ public class TreeHouse extends Applet
     
     public static void drawDoor (Graphics g)
   {
+   Color brown = new Color(105,71,33);
       
+   g.setColor(brown);
       
-    Polygon door = new Polygon();
+   Polygon door = new Polygon();
 
     door.addPoint(1410,793);
     door.addPoint(1410,600);
@@ -140,9 +142,6 @@ public class TreeHouse extends Applet
     building.addPoint(1920,850);
     
     g.fillPolygon(building);
-    
-  
-    
     
     }
      public static void drawWindow(Graphics g)
